@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
     <div class="container">
@@ -14,47 +19,30 @@
         <form>
             <div class="amount">
                 <p>Enter Amount</p>
-                <input type="text">
+                <input value="1" type="text" id="amount"/>
             </div>
             <div class="dropdown">
                 <div class="from">
                     <p>From</p>
                     <div class="select-container">
-                        <img src="https://flagsapi.com/NP/flat/64.png" alt="Nepal Flag">
-                        <select name="from">
-                            <option value="USD">USD</option>
-                            <option value="NPR" selected>NRS</option>
-                            <option value="INR">INR</option>
-                            <option value="EUR">EUR</option>
-                            <option value="AUD">AUD</option>
-                            <option value="CAD">CAD</option>
-                        </select>
+                        <img src="https://flagsapi.com/US/flat/64.png" />
+                        <select name="from" id="from-currency"></select>
                     </div>
                 </div>
-
-                <i class="fa fa-exchange" aria-hidden="true"></i>
-
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
                 <div class="to">
                     <p>To</p>
                     <div class="select-container">
-                        <img src="https://flagsapi.com/US/flat/64.png" alt="USA Flag">
-                        <select name="to">
-                            <option value="USD">USD</option>
-                            <option value="NPR">NRS</option>
-                            <option value="INR">INR</option>
-                            <option value="EUR">EUR</option>
-                            <option value="AUD">AUD</option>
-                            <option value="CAD">CAD</option>
-                        </select>
+                        <img src="https://flagsapi.com/IN/flat/64.png" />
+                        <select name="to" id="to-currency"></select>
                     </div>
                 </div>
             </div>
-
-            <div class="msg">1 USD = 133.88 NRS</div>
-            <button type="button">Get Exchange Rate</button>
+            <div class="msg" id="result">1 USD = 80 INR</div>
+            <button type="button" id="convert-button">Get Exchange Rate</button>
         </form>
     </div>
-    
-<script src="main.js"></script>
+    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
