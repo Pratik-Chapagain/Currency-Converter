@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #f4f4f9, #e0e7ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ffffff, #e0e7ff);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+    font-size: 24px;
+}
+
+.amount, .dropdown {
+    margin-bottom: 20px;
+}
+
+.amount p, .dropdown p {
+    margin: 0 0 10px;
+    color: #333;
+    font-weight: 700;
+}
+
+.amount input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.amount input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.select-container img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.select-container select {
+    width: calc(100% - 34px);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    font-size: 16px;
+}
+
+.select-container:hover {
+    border-color: #007bff;
+}
+
+.fa-exchange {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    color: #007bff;
+    animation: exchangeIconSpin 1s linear infinite;
+}
+
+@keyframes exchangeIconSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.msg {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+}
+
+button:active {
+    background-color: #004494;
+    transform: translateY(2px);
+}

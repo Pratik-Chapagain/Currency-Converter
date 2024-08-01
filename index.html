@@ -3,14 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Currency Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <div class="container">
         <h2>Currency Converter</h2>
+        <form>
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/NP/flat/64.png" alt="Nepal Flag">
+                        <select name="from">
+                            <option value="USD">USD</option>
+                            <option value="NPR" selected>NRS</option>
+                            <option value="INR">INR</option>
+                            <option value="EUR">EUR</option>
+                            <option value="AUD">AUD</option>
+                            <option value="CAD">CAD</option>
+                        </select>
+                    </div>
+                </div>
+
+                <i class="fa fa-exchange" aria-hidden="true"></i>
+
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="USA Flag">
+                        <select name="to">
+                            <option value="USD">USD</option>
+                            <option value="NPR">NRS</option>
+                            <option value="INR">INR</option>
+                            <option value="EUR">EUR</option>
+                            <option value="AUD">AUD</option>
+                            <option value="CAD">CAD</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msg">1 USD = 133.88 NRS</div>
+            <button type="button">Get Exchange Rate</button>
+        </form>
     </div>
     
-    <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
