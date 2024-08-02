@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fetch(apiURL)
         .then(response => response.json())
-        .then(data => {
+        .then(data => { 
             const currencies = Object.keys(data.rates);
             currencies.forEach(currency => {
                 const option1 = document.createElement('option');
