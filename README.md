@@ -1,0 +1,1 @@
+🚀 Just completed a fun and educational project! 🎉 I built a Currency Converter app using HTML, CSS, and JavaScript with the Fetch API. 🌐✨ It dynamically updates exchange rates and features a revolving exchange icon for a smooth user experience. Check out the live demo and code here! 💻
