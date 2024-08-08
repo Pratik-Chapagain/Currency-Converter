@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fromCurrencySelect = document.getElementById('from-currency');
     const toCurrencySelect = document.getElementById('to-currency');
     const convertButton = document.getElementById('convert-button');
-    const resultDiv = document.getElementById('result');
+    const resultDiv = document.getElementById('result'); 
 
     const fromFlag = document.querySelector('.from .select-container img');
     const toFlag = document.querySelector('.to .select-container img');
