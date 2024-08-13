@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             updateFlag(fromCurrencySelect.value, fromFlag);
             updateFlag(toCurrencySelect.value, toFlag);
         });
- 
+  
     const updateFlag = (currencyCode, imgElement) => {
         imgElement.src = `https://flagsapi.com/${currencyCode.slice(0, 2)}/flat/64.png`;
     };
