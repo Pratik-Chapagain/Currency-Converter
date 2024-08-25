@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             fromCurrencySelect.value = 'USD';
-            toCurrencySelect.value = 'NPR';   
+            toCurrencySelect.value = 'NPR';  
 
             updateFlag(fromCurrencySelect.value, fromFlag);
             updateFlag(toCurrencySelect.value, toFlag);  
